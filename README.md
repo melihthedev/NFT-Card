@@ -13,8 +13,4 @@ This is an NFT preview card component. I used HTML and CSS for this simple proje
 
 ### Images
 
-![Desktop Design](./design/desktop-design.jpg)
-
----
-
-![Active States](./design/active-states.jpg)
+![Desktop Design](./design/desktop-design.png)
