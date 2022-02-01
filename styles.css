@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%)
+}
+
+body {
+    background-color: var(--main-bg);
+    font-family: "Outfit", sans-serif;
+    color: var(--soft-blue);
+}
+
+#card > p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+#card {
+    background-color: var(--card-bg);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+    padding: 30px 20px;
+    margin: 10rem auto;
+}
+
+#nft {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#card > p {
+    display: inline;
+    border-radius: 10px;
+}
+
+.list {
+    margin-bottom: .5rem;
+}
+
+.list > p {
+    display: inline;
+    float: left;
+}
+
+.list > p:last-child {
+    float: right;
+}
+
+.list > p > img {
+    margin-right: 5px;
+}
+
+.eth {
+    color: var(--cyan);
+}
+
+.time {
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.line {
+    display: inline;
+    width: 100%;
+    align-self: center;
+    height: 2px;
+    border-radius: 1px;
+    margin-bottom: 10px;
+    background-color: hsl(215, 32%, 27%);
+}
+
+#creator {
+    display: flex;
+    align-items: center;
+}
+
+#avatar {
+    border-radius: 50%;
+    border: 1px solid #fff;
+    width: 35px;
+    margin-right: 1rem;
+}
+
+.name {
+    color: #fff;
+    text-decoration: none;
+}
+
+.name:hover, h3:hover {
+    color: var(--cyan);
+}
+
+/*IMAGE OVERVIEW EFFECT*/
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overview {
+    background-color: hsl(178, 100%, 50%, .4);
+    border-radius: 20px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right:0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+}
+
+
+.container:hover .overview {
+    opacity: 1;
+}
+
+
+.icon {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 450px) {
+    #card {
+        width: 70%;
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 900px){
+    #card {
+        width: 50%;
+    }
+}
